@@ -12,8 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.bytedance.android.lesson.restapi.solution.bean.Feed;
+import com.bytedance.android.lesson.restapi.solution.bean.FeedResponse;
+import com.bytedance.android.lesson.restapi.solution.bean.PostVideoResponse;
+import com.bytedance.android.lesson.restapi.solution.newtork.IMiniDouyinService;
 import com.bytedance.android.lesson.restapi.solution.utils.ResourceUtils;
 
 import java.io.File;
@@ -23,6 +28,13 @@ import java.util.List;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.Part;
+import retrofit2.http.Query;
 
 public class Solution2C2Activity extends AppCompatActivity {
 
@@ -49,6 +61,7 @@ public class Solution2C2Activity extends AppCompatActivity {
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 String s = mBtn.getText().toString();
+                System.out.println(s);
                 if (getString(R.string.select_an_image).equals(s)) {
                     chooseImage();
                 } else if (getString(R.string.select_a_video).equals(s)) {
@@ -85,8 +98,9 @@ public class Solution2C2Activity extends AppCompatActivity {
                 ImageView iv = (ImageView) viewHolder.itemView;
 
                 // TODO-C2 (10) Uncomment these 2 lines, assign image url of Feed to this url variable
-//                String url = mFeeds.get(i).;
-//                Glide.with(iv.getContext()).load(url).into(iv);
+
+                String url = mFeeds.get(i).urlback();
+                Glide.with(iv.getContext()).load(url).into(iv);
             }
 
             @Override public int getItemCount() {
@@ -97,11 +111,22 @@ public class Solution2C2Activity extends AppCompatActivity {
 
     public void chooseImage() {
         // TODO-C2 (4) Start Activity to select an image
+        System.out.println("开搞image");
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent,"select picture"),PICK_IMAGE);
     }
 
 
     public void chooseVideo() {
         // TODO-C2 (5) Start Activity to select a video
+
+        Intent intent = new Intent();
+        intent.setType("video/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent,"select video"),PICK_VIDEO);
+        System.out.println("搞完video");
     }
 
     @Override
@@ -126,6 +151,7 @@ public class Solution2C2Activity extends AppCompatActivity {
 
     private MultipartBody.Part getMultipartFromUri(String name, Uri uri) {
         // if NullPointerException thrown, try to allow storage permission in system settings
+        grantUriPermission(getPackageName(),mSelectedImage,Intent.FLAG_GRANT_READ_URI_PERMISSION);
         File f = new File(ResourceUtils.getRealPath(Solution2C2Activity.this, uri));
         RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), f);
         return MultipartBody.Part.createFormData(name, f.getName(), requestFile);
@@ -137,6 +163,40 @@ public class Solution2C2Activity extends AppCompatActivity {
 
         // TODO-C2 (6) Send Request to post a video with its cover image
         // if success, make a text Toast and show
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://test.androidcamp.bytedance.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        IMiniDouyinService req = retrofit.create(IMiniDouyinService.class);
+
+//        List<MultipartBody.Part> parts;
+//        parts.add(getMultipartFromUri("image_url",mSelectedImage));
+//        parts.add(getMultipartFromUri("image_url",mSelectedVideo));
+
+//        Feed feed = new Feed();
+//        feed.setImage_url(mSelectedImage.toString());
+//        feed.setVideo_url(mSelectedVideo.toString());
+        String student_id = "16061015";
+        String user_name = "zhouhaici";
+//        feed.setStudent_id(student_id);+
+//        feed.setUser_name(user_name);
+
+        Call<PostVideoResponse> call = req.request(getMultipartFromUri("cover_image",mSelectedImage),getMultipartFromUri("video",mSelectedVideo), student_id,user_name);
+        //怎么传这俩破玩意？
+
+        call.enqueue(new Callback<PostVideoResponse>() {
+            @Override
+            public void onResponse(Call<PostVideoResponse> call, Response<PostVideoResponse> response) {
+                System.out.println("成功");
+                Toast.makeText(Solution2C2Activity.this,"成功",Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<PostVideoResponse> call, Throwable throwable) {
+                System.out.println("失败");
+                Toast.makeText(Solution2C2Activity.this,"失败",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public void fetchFeed(View view) {
@@ -146,6 +206,31 @@ public class Solution2C2Activity extends AppCompatActivity {
         // TODO-C2 (9) Send Request to fetch feed
         // if success, assign data to mFeeds and call mRv.getAdapter().notifyDataSetChanged()
         // don't forget to call resetRefreshBtn() after response received
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://test.androidcamp.bytedance.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        IMiniDouyinService req = retrofit.create(IMiniDouyinService.class);
+        Call<FeedResponse> call = req.getFeed();
+        Toast.makeText(Solution2C2Activity.this,"fetch",Toast.LENGTH_SHORT).show();
+
+        call.enqueue(new Callback<FeedResponse>() {
+            @Override
+            public void onResponse(Call<FeedResponse> call, Response<FeedResponse> response) {
+                Toast.makeText(Solution2C2Activity.this,"fetch成功",Toast.LENGTH_SHORT).show();
+                mFeeds = response.body().listback();
+                mRv.getAdapter().notifyDataSetChanged();
+                resetRefreshBtn();
+            }
+
+            @Override
+            public void onFailure(Call<FeedResponse> call, Throwable throwable) {
+                Toast.makeText(Solution2C2Activity.this,"失败",Toast.LENGTH_SHORT).show();
+                resetRefreshBtn();
+            }
+        });
+
+
     }
 
     private void resetRefreshBtn() {

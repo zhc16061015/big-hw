@@ -66,12 +66,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void requestData(View view) {
-        // HttpURLConnection
-//        String s = NetworkUtils.getResponseWithHttpURLConnection("https://api.icndb.com/jokes/random");
-//        mTv.setText(s);
+       new jokeThread().run();
+    }
+    public class jokeThread extends Thread{
+        @Override
+        public void run(){
+            //HttpURLConnection
+            String s = NetworkUtils.getResponseWithHttpURLConnection("https://api.icndb.com/jokes/random");
+            mTv.setText(s);
 
-        // Retrofit
-//        Joke j = NetworkUtils.getResponseWithRetrofit();
-//        mTv.setText(j.getValue().getJoke());
+            // Retrofit
+            Joke j = NetworkUtils.getResponseWithRetrofit();
+            mTv.setText(j.getValue().getJoke());
+        }
     }
 }

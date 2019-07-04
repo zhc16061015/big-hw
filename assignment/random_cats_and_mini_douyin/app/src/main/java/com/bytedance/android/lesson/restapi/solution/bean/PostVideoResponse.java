@@ -7,4 +7,9 @@ package com.bytedance.android.lesson.restapi.solution.bean;
 public class PostVideoResponse {
 
     // TODO-C2 (3) Implement your PostVideoResponse Bean here according to the response json
+    String url;
+    boolean success;
+    public String urlback(){
+        return url;
+    }
 }
