@@ -9,4 +9,5 @@
     <string name="post_it">post it!</string>
     <string name="refresh_feed">refresh feed</string>
     <string name="success_try_refresh">SUCCESS, try refresh!</string>
+    <string name="record">show yourself</string>
 </resources>

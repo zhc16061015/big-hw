@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -47,6 +48,7 @@ public class Solution2C2Activity extends AppCompatActivity {
     private Uri mSelectedVideo;
     public Button mBtn;
     private Button mBtnRefresh;
+    private Button rBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +81,12 @@ public class Solution2C2Activity extends AppCompatActivity {
         });
 
         mBtnRefresh = findViewById(R.id.btn_refresh);
+        rBtn = findViewById(R.id.btn_record);
+        rBtn.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                //TODO 添加录制视频
+            }
+        });
     }
 
     private void initRecyclerView() {
@@ -227,7 +235,7 @@ public class Solution2C2Activity extends AppCompatActivity {
         call.enqueue(new Callback<FeedResponse>() {
             @Override
             public void onResponse(Call<FeedResponse> call, Response<FeedResponse> response) {
-                Toast.makeText(Solution2C2Activity.this,"fetch成功",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Solution2C2Activity.this,"刷新成功",Toast.LENGTH_SHORT).show();
                 mFeeds = response.body().listback();
                 mRv.getAdapter().notifyDataSetChanged();
                 resetRefreshBtn();
@@ -235,7 +243,7 @@ public class Solution2C2Activity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<FeedResponse> call, Throwable throwable) {
-                Toast.makeText(Solution2C2Activity.this,"失败",Toast.LENGTH_SHORT).show();
+                Toast.makeText(Solution2C2Activity.this,"暂无内容",Toast.LENGTH_SHORT).show();
                 resetRefreshBtn();
             }
         });

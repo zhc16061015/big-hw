@@ -31,6 +31,7 @@ public class IJKPlayerActivity extends AppCompatActivity {
     public static final int PROGRESS_CHANGED = 1;
     public Handler handler = new Handler();
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,10 +97,11 @@ public class IJKPlayerActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(ijkPlayer.isPlaying()){
                     ijkPlayer.pause();
-
+                    Toast.makeText(IJKPlayerActivity.this,"暂停",Toast.LENGTH_SHORT).show();
                 }
                 else{
                     ijkPlayer.start();
+                    Toast.makeText(IJKPlayerActivity.this,"继续",Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -133,6 +135,13 @@ public class IJKPlayerActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        if(null != handler) {
+            handler = null;
+        }
+    }
     private String getVideoPath() {
         return "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8";
 //        return "android.resource://" + this.getPackageName() + "/" + resId;
