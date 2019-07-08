@@ -1,9 +1,13 @@
 package com.bytedance.android.lesson.restapi.solution;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -56,9 +60,14 @@ public class Solution2C2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_solution2_c2);
         initRecyclerView();
         initBtns();
-    }
 
+
+        ActivityCompat.requestPermissions(Solution2C2Activity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 101);
+
+
+    }
     private void initBtns() {
+
         mBtn = findViewById(R.id.btn);
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
@@ -84,9 +93,20 @@ public class Solution2C2Activity extends AppCompatActivity {
         rBtn = findViewById(R.id.btn_record);
         rBtn.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
-                //TODO 添加录制视频
+                if (ContextCompat.checkSelfPermission(Solution2C2Activity.this,
+                        Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+                    //todo 在这里申请相机、存储的权限
+                    ActivityCompat.requestPermissions(Solution2C2Activity.this, new String[]{Manifest.permission.CAMERA}, 1);
+                }
+                else {
+                    Intent intent_r = new Intent(Solution2C2Activity.this, CustomCameraActivity.class);
+                    startActivity(intent_r);
+                }
             }
         });
+
+
+
     }
 
     private void initRecyclerView() {
@@ -255,4 +275,16 @@ public class Solution2C2Activity extends AppCompatActivity {
         mBtnRefresh.setText(R.string.refresh_feed);
         mBtnRefresh.setEnabled(true);
     }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case 1: {
+                //todo 判断权限是否已经授予
+                ActivityCompat.requestPermissions(Solution2C2Activity.this, new String[]{Manifest.permission.RECORD_AUDIO}, 1010);
+                break;
+            }
+        }
+    }
+
 }

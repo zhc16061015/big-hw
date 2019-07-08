@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.danikula:videocache:2.7.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9df16a6ff0a38b89d1ba2a26a28fb972/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9df16a6ff0a38b89d1ba2a26a28fb972/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/181f4c35a1be9a754611bd5337f949aa/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/181f4c35a1be9a754611bd5337f949aa/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

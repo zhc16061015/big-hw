@@ -138,9 +138,10 @@ public class IJKPlayerActivity extends AppCompatActivity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        if(null != handler) {
-            handler = null;
-        }
+//        if(null != handler) {
+//
+//            handler = null;
+//        }
     }
     private String getVideoPath() {
         return "http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8";

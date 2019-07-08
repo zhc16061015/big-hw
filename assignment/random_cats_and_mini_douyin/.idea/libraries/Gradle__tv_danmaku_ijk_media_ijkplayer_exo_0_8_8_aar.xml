@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: tv.danmaku.ijk.media:ijkplayer-exo:0.8.8@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e7740b9627a95ff9e78affeca73ebdd/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9e7740b9627a95ff9e78affeca73ebdd/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e27000d2c2117ff0a3adec86d7a2c24a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e27000d2c2117ff0a3adec86d7a2c24a/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
