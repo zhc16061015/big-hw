@@ -1,5 +1,7 @@
 package com.bytedance.android.lesson.restapi.solution.bean;
 
+import android.widget.Toast;
+
 /**
  * @author Xavier.S
  * @date 2019.01.20 14:18
@@ -26,5 +28,8 @@ public class Feed {
     }
     public String urlback(){
         return image_url;
+    }
+    public String getVideo_url(){
+            return video_url;
     }
 }

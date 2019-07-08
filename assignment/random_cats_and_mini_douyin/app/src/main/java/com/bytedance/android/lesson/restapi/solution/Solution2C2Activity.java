@@ -101,6 +101,16 @@ public class Solution2C2Activity extends AppCompatActivity {
 
                 String url = mFeeds.get(i).urlback();
                 Glide.with(iv.getContext()).load(url).into(iv);
+                final String video_url = mFeeds.get(i).getVideo_url();
+                iv.setOnClickListener(new View.OnClickListener() {
+                    @Override public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), IJKPlayerActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("url",video_url);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+                    }
+                });
             }
 
             @Override public int getItemCount() {
