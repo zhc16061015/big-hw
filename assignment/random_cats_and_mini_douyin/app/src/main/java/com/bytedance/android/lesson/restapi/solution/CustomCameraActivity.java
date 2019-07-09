@@ -12,6 +12,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.bytedance.android.lesson.restapi.solution.utils.Utils;
@@ -33,6 +34,7 @@ public class CustomCameraActivity extends AppCompatActivity implements Camera.Au
     private int CAMERA_TYPE = Camera.CameraInfo.CAMERA_FACING_BACK;
     private int CAMERA_TYPE2 = Camera.CameraInfo.CAMERA_FACING_FRONT;
     private int now_type;
+    private EditText editText;
 
     private boolean isRecording = false;
 
@@ -47,6 +49,7 @@ public class CustomCameraActivity extends AppCompatActivity implements Camera.Au
         setContentView(R.layout.activity_custom_camera);
 
         mSurfaceView = findViewById(R.id.img);
+        editText = findViewById(R.id.blackOutNumber);
         //todo 给SurfaceHolder添加Callback
         mCamera = getCamera(CAMERA_TYPE);
         now_type = CAMERA_TYPE;
@@ -84,12 +87,8 @@ public class CustomCameraActivity extends AppCompatActivity implements Camera.Au
             //todo 录制，第一次点击是start，第二次点击是stop
             if (isRecording) {
                 //todo 停止录制
-                Toast.makeText(CustomCameraActivity.this, "视频文件存储在：/storage/emulated/0/Pictures/CameraDemo/", Toast.LENGTH_SHORT).show();
                 isRecording = false;
                 releaseMediaRecorder();
-
-
-
 
             } else {
                 //todo 录制
@@ -208,7 +207,13 @@ public class CustomCameraActivity extends AppCompatActivity implements Camera.Au
         mMediaRecorder.setAudioSource(MediaRecorder.AudioSource.CAMCORDER);
         mMediaRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
         mMediaRecorder.setProfile(CamcorderProfile.get(CamcorderProfile.QUALITY_HIGH));
-        mMediaRecorder.setMaxDuration(10000);
+
+        String c=editText.getText().toString();
+        if(!c.isEmpty()){
+            mMediaRecorder.setMaxDuration(Integer.parseInt(c)*1000);
+        }else{
+            mMediaRecorder.setMaxDuration(10000);
+        }
         mMediaRecorder.setOutputFile(Utils.getOutputMediaFile(Utils.MEDIA_TYPE_VIDEO).toString());
         System.out.println(Utils.getOutputMediaFile(Utils.MEDIA_TYPE_VIDEO).toString());
         mMediaRecorder.setPreviewDisplay(mSurfaceView.getHolder().getSurface());
@@ -220,6 +225,7 @@ public class CustomCameraActivity extends AppCompatActivity implements Camera.Au
 
     private void releaseMediaRecorder() {
         //todo 释放MediaRecorder
+        Toast.makeText(CustomCameraActivity.this, "视频文件存储在：/storage/emulated/0/Pictures/CameraDemo/", Toast.LENGTH_SHORT).show();
         mMediaRecorder.stop();
         mMediaRecorder.reset();
         mMediaRecorder.release();

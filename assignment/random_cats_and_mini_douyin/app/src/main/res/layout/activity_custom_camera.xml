@@ -19,6 +19,17 @@
         android:layout_marginBottom="20dp"
         android:gravity="center">
 
+        <EditText
+            android:id="@+id/blackOutNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:paddingLeft="2dp"
+            android:layout_weight="1"
+            android:hint="倒计时"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:background="@null"
+        />
         <ImageView
             android:id="@+id/Recordbtn"
             android:layout_width="wrap_content"

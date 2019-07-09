@@ -6,18 +6,11 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c22021c5-c70e-4cf0-99a4-48e50eeb587e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/CustomCameraActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/UriUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_custom_camera.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/b1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/b2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
@@ -58,13 +51,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__tv_danmaku_ijk_media_ijkplayer_armv7a_0_8_8_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__tv_danmaku_ijk_media_ijkplayer_armv7a_0_8_8_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__tv_danmaku_ijk_media_ijkplayer_exo_0_8_8_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__tv_danmaku_ijk_media_ijkplayer_exo_0_8_8_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__tv_danmaku_ijk_media_ijkplayer_java_0_8_8_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__tv_danmaku_ijk_media_ijkplayer_java_0_8_8_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/CustomCameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/CustomCameraActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/IJKPlayerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/IJKPlayerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/Solution2C2Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/Solution2C2Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_custom_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_custom_camera.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_ijkplayer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_ijkplayer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,10 +78,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/Solution2C2Activity.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_ijkplayer.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="284" column="22" selection-start-line="283" selection-start-column="94" selection-end-line="284" selection-end-column="22" />
+            <state relative-caret-position="38">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/CustomCameraActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -97,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_solution2_c2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="380">
               <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
             </state>
           </provider>
@@ -107,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1326">
+            <state relative-caret-position="76">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -118,30 +120,18 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_custom_camera.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/CustomCameraActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
             </state>
           </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/UriUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3287">
+            <state relative-caret-position="3078">
               <caret line="173" column="1" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -153,7 +143,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/player/VideoPlayerIJK.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2356">
+            <state relative-caret-position="392">
               <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
             </state>
           </provider>
@@ -162,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/player/VideoPlayerListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="55">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
@@ -171,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/IJKPlayerActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="38" />
+            <state relative-caret-position="352">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,6 +198,8 @@
       <find>button</find>
       <find>Toast</find>
       <find>Toa</find>
+      <find>releaseMe</find>
+      <find>setMax</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -238,21 +230,21 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_solution2_c1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_ijkplayer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_solution2_c2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/Utils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/UriUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/Solution2C2Activity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_ijkplayer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/IJKPlayerActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_custom_camera.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/CustomCameraActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/Solution2C2Activity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/IJKPlayerActivity.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="106" />
+    <option name="y" value="53" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -351,7 +343,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="KWG7N16812003178" />
+    <property name="device.picker.selection" value="KWG5T16427006551" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Chapter-77" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
@@ -473,11 +465,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="85" y="43" width="1400" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49881798" visible="true" weight="0.22788204" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49881798" weight="0.2533532" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.501182" side_tool="true" weight="0.32908705" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -485,14 +477,14 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.32908705" />
       <window_info id="Capture Tool" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.32577905" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32692307" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32668713" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.32668713" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.1993007" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50106156" side_tool="true" weight="0.32692307" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.32867134" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32911393" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49893844" weight="0.26487252" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49893844" weight="0.2638037" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.36402267" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -502,6 +494,33 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Preview" order="5" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49881798" weight="0.2533532" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.501182" side_tool="true" weight="0.32908705" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" weight="0.32908705" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32822084" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32692307" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.1993007" />
+      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50106156" side_tool="true" weight="0.32692307" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32867134" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32911393" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.49893844" visible="true" weight="0.2638037" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.36402267" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Preview" order="5" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
@@ -631,6 +650,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
@@ -639,15 +659,6 @@
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_ijkplayer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/Solution2C1Activity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -677,17 +688,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/player/VideoPlayerIJK.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/Util.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/Solution2C2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2356">
-          <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
+        <state relative-caret-position="542">
+          <caret line="290" selection-start-line="290" selection-end-line="290" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/player/VideoPlayerListener.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_solution2_c2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/UriUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3078">
+          <caret line="173" column="1" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -699,73 +732,50 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/Util.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_ijkplayer.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/UriUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3287">
-          <caret line="173" column="1" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_custom_camera.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1326">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_solution2_c2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/Solution2C2Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="284" column="22" selection-start-line="283" selection-start-column="94" selection-end-line="284" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/IJKPlayerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="38" />
+        <state relative-caret-position="352">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/player/VideoPlayerIJK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/player/VideoPlayerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_custom_camera.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bytedance/android/lesson/restapi/solution/CustomCameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
         </state>
       </provider>
     </entry>

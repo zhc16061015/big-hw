@@ -11,8 +11,8 @@
         android:id="@+id/ijkPlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"/>
-
+        android:layout_gravity="center_horizontal"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,33 +28,35 @@
             android:layout_gravity="center_vertical"/>
 
     </LinearLayout>
-    <LinearLayout
-        android:id="@+id/linear2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="bottom">
 
-        <Button
-            android:id="@+id/buttonPlay"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Play" />
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_gravity="top">-->
+        <!---->
 
-        <Button
-            android:id="@+id/buttonPause"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pause" />
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/buttonPlay"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Play" />&ndash;&gt;-->
 
-        <Button
-            android:id="@+id/buttonChange"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Change" />
-    </LinearLayout>
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/buttonPause"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Pause" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/buttonChange"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Change" />&ndash;&gt;-->
+    <!--</LinearLayout>-->
 
 </LinearLayout>

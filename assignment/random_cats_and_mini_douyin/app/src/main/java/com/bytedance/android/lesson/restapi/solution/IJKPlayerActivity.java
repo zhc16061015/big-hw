@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bytedance.android.lesson.restapi.solution.player.VideoPlayerIJK;
@@ -30,6 +31,7 @@ public class IJKPlayerActivity extends AppCompatActivity {
     private String video_url;
     public static final int PROGRESS_CHANGED = 1;
     public Handler handler = new Handler();
+    private TextView textView1;
 
 
     @Override
@@ -105,32 +107,32 @@ public class IJKPlayerActivity extends AppCompatActivity {
                 }
             }
         });
-        findViewById(R.id.buttonPlay).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ijkPlayer.start();
-            }
-        });
-
-        findViewById(R.id.buttonPause).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ijkPlayer.pause();
-            }
-        });
-
-        findViewById(R.id.buttonChange).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-                } else if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
-                    //变成横屏了
-                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
-                }
-            }
-        });
+//        findViewById(R.id.buttonPlay).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ijkPlayer.start();
+//            }
+//        });
+//
+//        findViewById(R.id.buttonPause).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ijkPlayer.pause();
+//            }
+//        });
+//
+//        findViewById(R.id.buttonChange).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+//                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//                } else if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+//                    //变成横屏了
+//                    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+//
+//                }
+//            }
+//        });
 
     }
 
